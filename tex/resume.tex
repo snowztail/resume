@@ -1,0 +1,79 @@
+\documentclass{resume}
+
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\textit{Last updated: \today}}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\name{Yang Zhao}
+
+\basicInfo{
+  \email{i@snowztail.com} \textperiodcentered\
+  \phone{(44)7747-390-777} \textperiodcentered\
+  \github[SnowzTail]{https://github.com/SnowzTail/}
+}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Imperial College London}, London UK}{2018 -- Present}
+\textit{\textbf{MSc} Communication and Signal Processing, expected distinction}
+\datedsubsection{\textbf{University of Liverpool}, Liverpool UK}{2016 -- 2018}
+\textit{\textbf{BEng} Communication and Electronics, with distinction}
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{China Mobile Group}, Guangdong CN}{2018}
+\textit{Summer Intern}
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Scheduled the emergency communication system
+  \item Implemented MRO coverage analysis
+\end{itemize}
+
+\datedsubsection{\textbf{China Mobile Group Design Institute}, Guangdong CN}{2017}
+\textit{Summer Intern}
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Summarized business solutions of NB-IoT and FDD LTE
+  \item Simulated FDD coverage based on cell distribution
+\end{itemize}
+
+\section{\faBookmarkO\ Projects}
+\datedsubsection{\textit{Signal Optimization for Wireless Information and Power Transmission}}{2019 -- Present}
+We investigated a novel harvester nonlinear model based on the Taylor expansion of diode \textit{I--V} characteristics and performed a signal design on top of it. A superposition of modulated information waveform and multisine power waveform is jointly optimized with the power splitting ratio, according to the CSI and rate requirements. Based on non-convex posynomial maximization, the iterative algorithms were demonstrated to benefit the rate-energy tradeoff especially for high SNR and multi-band transmissions. It may help trillions of low-power devices to get rid of batteries by efficiently utilizing the energy and information carried by RF signals.
+
+\datedsubsection{\textit{Cross-Layer Optimization for 4G Broadband Wireless Communication Networks}}{2018}
+We proposed an adaptive low-complexity cross-layer design across the PHY and MAC layer to determine the data packet transmission order according to the service characteristics and CSI. PD and M-LWDF scheduling were combined with M-MWC and M-WF allocation for flexible traffic control. With a proper packet selecting strategy, the proposed algorithm was proved to increase the spectrum and power efficiency while significantly reduce the delay, outage, and packet drop rate. The possibility of extending current networks to support new types of traffic as haptic was investigated.
+
+\section{\faTasks\ Courseworks}
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Arduino: 3D scanner, digital clock, smart toy car
+  \item Signal: adaptive filter design, sparse signal recovery, FRI signal sampling and reproducing
+  \item Vision: image categorization by RF, digit generation by GAN
+  \item Wireless: spatiotemporal DS-CDMA, LTE SU-MIMO
+\end{itemize}
+
+\section{\faHeartO\ Skills and Achievements}
+
+\begin{itemize}[noitemsep,nolistsep]
+  \item Focus: wireless communication, signal processing, machine learning
+  \item Background: array processing, coding theory, data science, electronics, information theory, optimization
+  \item Strength: problem-solving, self-learning, team-working
+  \item Programming: MATLAB, C, C++, Python
+  \item Honor: university achievement award(2016), IET student prize(2018)
+\end{itemize}
+
+
+\end{document}
