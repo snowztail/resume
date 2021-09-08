@@ -4,21 +4,17 @@
 
 
 \RequirePackage[hidelinks]{hyperref}
-\RequirePackage[margin=0.75in]{geometry}
+\RequirePackage[margin=0.5in]{geometry}
 \RequirePackage{enumitem}
 \RequirePackage{fontawesome}
 \RequirePackage{titlesec}
 \RequirePackage{url}
 \RequirePackage{xcolor}
+\RequirePackage[yyyymmdd]{datetime}
 
-% \newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\scriptsize Last updated on #1}}
-\newcommand{\updateinfo}[1][\today]{
-	\hfill\scriptsize{\textit{Last updated on #1}}
+\newcommand{\updateinfo}[1]{
+	\hfill\scriptsize{\scriptsize{Updated on \today\ for #1}}
 }
-% \newcommand{\updateinfo}[1][\today]{
-% 	\par\vfill\hfill{\script‌​size\color{gray}Last updated on #1}
-% }
-% \newcommand{\updateinfo}{\par\vfill\hfill{\script‌​size Last updated on \today}}
 
 \titleformat{\section}
 	{\Large\scshape\raggedright}

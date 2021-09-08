@@ -1,22 +1,12 @@
 \documentclass{resume}
 
-% \usepackage{enumitem}
 \usepackage{fancyhdr}
-% \usepackage{fontawesome}
 
-
-\pagestyle{fancy}
-
-\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 
-% \lhead{}
-% \chead{}
-% \rhead{}
-% \lfoot{}
-% \cfoot{}
-% \rfoot{\textit{Last updated: \today}}
-
+\pagestyle{fancy}
+\fancyhf{}
+% \SetSymbolFont{fontawesomeone}{bold}{U}{fontawesomeone}{m}{n}
 \begin{document}
 
 \pagenumbering{gobble}
@@ -26,61 +16,63 @@
 \basicInfo{
 	\email{i@snowztail.com} \textperiodcentered\
 	\github[SnowzTail]{https://github.com/SnowzTail/} \textperiodcentered\
-	\homepage[Blog]{https://snowztail.com/} \textperiodcentered\
-	\phone{(44)7747-390-777}
+	\phone{7747-390-777}
 }
 
 \begin{section}{\faGraduationCap\ Education}
 	\datedsubsection{\textbf{Imperial College London}}{2019 -- Present}
-	\textit{PhD Candidate} Wireless Communications
+	\textit{PhD Candidate} Backscatter, Wireless Information and Power Transfer
 
 	\datedsubsection{\textbf{Imperial College London}}{2018 -- 2019}
-	\textit{MSc} Communications and Signal Processing, with distinction
+	\textit{MSc} Communications and Signal Processing
 
 	\datedsubsection{\textbf{University of Liverpool}}{2016 -- 2018}
-	\textit{BEng} Communications and Electronics, with distinction
+	\textit{BEng} Communications and Electronics
 \end{section}
 
 \begin{section}{\faUsers\ Works}
-	\datedsubsection{\textbf{China Mobile Group}, Guangdong CN}{2018}
+	\datedsubsection{\textbf{China Mobile Group}, Guangzhou, China}{2018}
 	\role{Intern Engineer}
 	\begin{itemize}[noitemsep,nolistsep]
-		\item Maintained base stations and deployed emergency communication vehicles
-		\item Investigated equipment power consumption and identified network issues based on MRO statistics
+		\item Maintained base stations and run emergency communication vehicles
+		\item Investigated device power consumption and analyzed MRO statistics
 	\end{itemize}
 
-	\datedsubsection{\textbf{China Mobile Group Design Institute}, Guangdong CN}{2017}
+	\datedsubsection{\textbf{China Mobile Group Design Institute}, Guangzhou, China}{2017}
 	\role{Intern Assistant}
 	\begin{itemize}[noitemsep,nolistsep]
 		\item Summarized commercial solutions of NB-IoT and FDD-LTE (BBU, RRU, microcell)
-		\item Simulated and evaluated FDD/TDD-LTE performance (RSRP, SINR, CSFB) for typical areas
+		\item Simulated and evaluated real-site FDD/TDD-LTE performance (RSRP, SINR, CSFB)
 	\end{itemize}
 \end{section}
 
 \begin{section}{\faPaperPlane\ Research}
+	\datedsubsection{\textbf{Backscatter Modulation Design for Symbiotic Radio}}{2021}
+	\begin{itemize}
+		\item We departed from the difference between symbiotic radio and conventional MAC and optimized the tag input distribution to integrate backscatter modulation and passive beamforming.
+	\end{itemize}
 	\datedsubsection{\textbf{IRS-Aided SWIPT: Joint Waveform, Active and Passive Beamforming Design}}{2020}
 	\begin{itemize}
-		\item This project investigates an efficient IRS-aided SWIPT architecture where a multi-carrier multi-antenna AP transmits information and power simultaneously to a single-antenna user. Considering energy harvester nonlinearity, we aim to maximize the rate-energy tradeoff through a joint optimization of the waveform, active and passive beamforming, and power splitting ratio.
+		\item This paper investigated the R-E tradeoff of a single user employing practical receiving strategies in an IRS-aided multi-carrier MISO SWIPT system.
 	\end{itemize}
 \end{section}
 
-\begin{section}{\faTasks\ Skills}
+\begin{section}{\faTasks\ Experience}
 	\begin{itemize}[noitemsep,nolistsep]
-		\item Competent in MATLAB, Linux, Windows, Git, Shell, \LaTeX
-		\item Familiar with C, Python, Docker, HTML, CSS, Nginx, Inkscape
-		\item Limited knowledge in Apache, JavaScript, SQL
+		\item Skilled Arch Linux user and FOSS contributor, over 15 years experience with Windows
+		\item Knowledge in MATLAB, C, C++, Python, HTML, CSS, Git, Docker, PGP, S/MIME
+		\item Host Apache/Nginx webserver, Nextcloud storage, Bitwarden password vault, Postfix/Dovecot mail server
 	\end{itemize}
 \end{section}
 
 \begin{section}{\faHeartO\ About}
 	\begin{itemize}[noitemsep,nolistsep]
-		\item Perfectionist, minimalist, explorer, enthusiast, liberal, open-source contributor
-		\item Love anime, pets, Hi-Fi, mathematics, programming, football, cooking, photography
-		\item Host own website, cloud storage, email server, note repository, password manager
-		\item University achievement award (2016), IET student prize (2018)
+		\item General IT knowledge and troubleshooting skills
+		\item Friendly, helpful and enthusiastic person
+		\item Familiar with CSP group and ICT affairs
 	\end{itemize}
 \end{section}
 
-\updateinfo
+\updateinfo{ICT support}
 
 \end{document}
