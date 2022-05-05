@@ -13,6 +13,7 @@
 \RequirePackage[yyyymmdd]{datetime}
 
 \newcommand{\updateinfo}[1]{
+	\vfill
 	\hfill\scriptsize{\scriptsize{Updated on \today\ for #1}}
 }
 
@@ -72,7 +73,7 @@
 }
 
 \newcommand{\role}[1]{
-	{\par \textit{#1} \par}
+	{\par \quad \textit{#1} \par}
 }
 
 \newcommand{\category}[1]{
