@@ -1,0 +1,54 @@
+\documentclass[10pt]{scrartcl}
+
+\usepackage{scrletter}
+\usepackage{parskip}
+
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{import}
+\usepackage{microtype}
+\usepackage[acronym]{glossaries-extra}
+\usepackage[subtle]{savetrees}
+
+% letter signature
+% \renewcommand*{\raggedsignature}{\raggedright}
+
+% \setlength\parindent{0pt}
+
+% glossaries-extra
+\glsdisablehyper
+\setabbreviationstyle[acronym]{long-short}
+\newacronym{itp}{ITP}{Intelligent Transmission and Processing}
+
+
+\begin{document}
+
+\setkomavar{date}{\today}
+\setkomavar{signature}{Yang Zhao}
+\setkomavar{subject}{Postdoctoral Application -- Research Associate in Signal Processing and Machine Learning for Wireless Communications \href{https://www.imperial.ac.uk/jobs/description/ENG02931/research-associate-signal-processing-and-machine-learning-wireless-communications}{(ENG02931)}}
+
+\begin{letter}{%
+		Professor Bruno Clerckx\\
+		Head of the Wireless Communications and Signal Processing Lab
+	}
+	\opening{Dear Bruno,}
+	After a careful consideration, I am writing to express my interest in extending my research career with you.
+
+	We know each other very well and let's skip the introduction.
+	I believe the key description ``future communications hub in all-spectrum connectivity'' refers to RIS, possibly beyond-diagonal multi-sector ones that have recently attracted significant attention.
+	I feel the potential of meta-material is not fully unleashed and want to share my thoughts on future RIS applications.
+	\begin{enumerate}
+		\item Frequency shifting. If an all-spectrum RIS can sense the spectrum holes, it may shift the frequency of the incident signal to the desired band (similar to BackCom). Each group / tile can be assigned a different frequency band. This not only allows self-interference cancellation and spectrum aggregation, but also enables multi-carrier WPT with conventional CW transmitters.
+		\item RIS-to-RIS transmission. Imagine 2 static multi-sectors RISs with one sector facing each other and other sectors facing the users. Stronger beams are formed between the RISs at lower optimization costs to combat path loss, and the users may retrieve information from local RISs.
+		\item Interference alignment. We already did this for single sector, and extension to multi sector would be much interesting. When the RIS is sufficiently smooth (w.r.t. number of users), it can function as a telephone operator and the channels would be diagonal. How practical is this?
+		\item Index modulation for common message broadcast. This is the work abandoned earlier -- the RIS can transmit an additional common (e.g., control) message to all users, or enlarge the time-sharing rate region by rate splitting. The group size, connection architecture, and active sector can all be used for information encoding.
+		\item Transforming far-field to near-field. Does placing $N$ RIS between the transmitter and receiver divides the far-field into $N+1$ near-fields?
+		\item In-group element connection means cooperation. Can we apply some cooperative transmission (instead of beamforming) techniques to the RISs?
+	\end{enumerate}
+
+	Sincerely appreciate your time and attention as always. Hopefully we can answer some of the above questions together in the future.
+	\closing{Yours sincerely,}
+\end{letter}
+
+
+\end{document}
