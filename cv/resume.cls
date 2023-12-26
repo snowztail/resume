@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}
-\LoadClass[11pt]{article}
+\LoadClass[8pt]{article}
 
 
 \RequirePackage[hidelinks]{hyperref}
-\RequirePackage[margin=0.5in]{geometry}
+\RequirePackage[margin=0.4in]{geometry}
 \RequirePackage{enumitem}
 \RequirePackage{fontawesome}
 \RequirePackage{titlesec}
@@ -35,11 +35,11 @@
 }
 
 \newcommand{\datedsubsection}[2]{
-	\subsection[#1]{#1 \hfill #2}
+	\subsection[#1]{#1 \hfill \small{#2}}
 }
 
 \newcommand{\name}[1]{
-	\centerline{\Huge\scshape{#1}}
+	\centerline{\huge\scshape{#1}}
 	\vspace{1em}
 }
 
@@ -69,11 +69,19 @@
 }
 \newcommand{\basicInfo}[1]{
 	\centerline{\sffamily\large{#1}}
-	\vspace{1em}
+	% \vspace{1em}
 }
 
-\newcommand{\role}[1]{
-	{\par \quad \textit{#1} \par}
+% \newcommand{\role}[1]{
+% 	{\par \quad \textit{#1} \par}
+% }
+
+\newcommand{\role}[2]{
+	{\par \quad {#1} \textperiodcentered\ \textit{#2} \par}
+}
+
+\newcommand{\subcaption}[1]{
+	{\par \quad \small{#1} \par}
 }
 
 \newcommand{\category}[1]{
