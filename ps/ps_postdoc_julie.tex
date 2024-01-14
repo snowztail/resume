@@ -1,0 +1,80 @@
+\documentclass[10pt]{scrartcl}
+
+\usepackage{scrletter}
+\usepackage{parskip}
+
+\usepackage{cite}
+\usepackage{import}
+\usepackage{microtype}
+\usepackage[colorlinks]{hyperref}
+\usepackage[acronym]{glossaries-extra}
+\usepackage[subtle]{savetrees}
+
+% letter signature
+% \renewcommand*{\raggedsignature}{\raggedright}
+
+% \setlength\parindent{0pt}
+
+% glossaries-extra
+\glsdisablehyper
+\setabbreviationstyle[acronym]{long-short}
+\newacronym{itp}{ITP}{Intelligent Transmission and Processing}
+
+
+\begin{document}
+
+\setkomavar{date}{\today}
+\setkomavar{signature}{Yang Zhao}
+\setkomavar{subject}{Postdoctoral Application -- Research Fellow in Integrated Sensing and Communications \href{https://www.imperial.ac.uk/jobs/description/ENG02921/research-fellow-integrated-sensing-and-communications/}{(ENG02921)}}
+
+\begin{letter}{%
+		Professor Julie McCann\\
+		Vice-Dean (Research) for the Faculty of Engineering
+	}
+	\opening{Dear Prof McCann,}
+
+	Hope this letter finds you well.
+
+	I am writing to express my enthusiastic interest in the Research Fellow position that aims at implementing integrated sensing and communications (ISAC) for CHEDDAR.
+
+	I have been working on physical layer wireless at Imperial with \href{https://www.imperial.ac.uk/people/b.clerckx}{Prof Bruno Clerckx} for 5 years.
+	Topics covered include MIMO, reconfigurable intelligent surface (RIS), backscatter communications, and simultaneous information and power transfer (SWIPT).
+	I was lucky to \href{https://scholar.google.co.uk/citations?user=ckmF3VsAAAAJ&hl=en}{have published} 2 top-tier journal papers and a book chapter.
+	By the end of my PhD (March 2024), 2 more high-quality journal papers will be submitted and another 1 will be half cooked.
+	Most of my works are on RIS, a 6G candidate that redistributes ambient signals for improved wireless performance.
+
+	The position is appealing to me for two reasons.
+	First, sensing and communications are two sides of the same coin --- they are both about extracting information from the radio, one related to the environment and the other related to the people.
+	The boundary is getting blurred during the paradigm shift from connectivity to intelligence that we are experiencing now.
+	Sensing fits perfectly in my research vision of making the most of radio waves.
+	After working on backscatter (radiates on demand), RIS (recycles signals on the air) and SWIPT (unifies information and energy delivery), I am ready for ISAC that completes the picture of intelligent wireless future, where everything and everyone understands and connects with the others better.
+
+	Second, I am looking forward to new challenges and perspectives.
+	So far I have been following a theoretic path of signal processing, optimization, information theory, and some machine learning.
+	Those are extremely useful tools for beginners to understand the limits and essence.
+	However, the society are very close to the Shannon limit, and many papers still abuse those tools for too-complicated or too-ideal problems.
+	When discussing with colleagues, I often feel many of them care more about the publication (quantity and who first) than research quality and real-world impact.
+	Instead, I really want to rethink from a fresh perspective and to solve practical problems.
+	One day I came across the \href{https://en.wikipedia.org/wiki/Four_color_theorem}{Four Color Problem} that was unpuzzled by the world's first machine-aided proof.
+	This shook the math society 50 years ago, but now Lean has become a standard tool for mathematicians to test and inspire proofs.
+	It suggests that diversity is helpful not only in wireless channels, but also in research philosophy and life decisions.
+
+	The AESE lab covers a wide range of topics.
+	Of my particular interest are the works on LoRa and environment monitoring where protocols and prototypes have been developed.
+	I read extensively on ambient backscatter and symbiotic radios but have not had the chance to implement them.
+	Please allow me to share our theoretic work on \href{https://github.com/snowztail/riscatter-unifying-backscatter-communication-and-reconfigurable-intelligent-surface/blob/master/poster/beamer.pdf}{RIScatter} --- a batteryless cognitive radio that partially modulates the tag information and partially engineers the wireless channel by adaptive input distribution design.
+	This idea of ``passive tags and sensors can talk over and enhance Wi-Fi'' has attracted much attention at a symposium, but we didn't have the resource to continue the project (Prof Clerckx wanted me to prioritize the other funded project).
+	It would be exciting if we could try this at the AESE lab and demonstrate it in practice.
+
+	One of my disadvantage is that I didn't have any experience on sensing.
+	I am very happy to learn from the textbook, papers and colleagues.
+	On the other hand, I have been working on the cutting-edge wireless topics and am confident in wireless communications, information theory, signal processing, optimization, and matrix analysis.
+	I also helped as a teaching assistant for undergraduate and postgraduate communication courses for many years.
+	Hopefully my background might benefit the lab in terms of diversity.
+
+	Thank you so much for your time and consideration. Wish you a better year 2024.
+	\closing{Yours sincerely,}
+\end{letter}
+
+
+\end{document}
